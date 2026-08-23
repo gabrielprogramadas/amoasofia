@@ -7,21 +7,21 @@ let angle = 0.0;
 
 let z_buffer = new Array(width * height).fill(0);
 
-const shades = " .,-~:;=!*#$@@";
+const shades = " sofiasofiasof";
 const colorMap = {
     ' ': '#000000',
-    '.': '#540518ff',
-    ',': '#6c051fff',
-    '-': '#7a1232ff',
-    '~': '#8d173eff',
-    ':': '#9e1f4bff',
-    ';': '#c33260ff',
-    '=': '#de496cff',
-    '!': '#f26c87ff',
-    '*': '#f08592ff',
-    '#': '#f1a2a2ff',
-    '$': '#facabaff',
-    '@': '#ffeecfff'
+    's': '#540518ff',
+    'o': '#6c051fff',
+    'f': '#7a1232ff',
+    'i': '#8d173eff',
+    'a': '#9e1f4bff',
+    's': '#c33260ff',
+    'o': '#de496cff',
+    'f': '#f26c87ff',
+    'i': '#f08592ff',
+    'a': '#f1a2a2ff',
+    's': '#facabaff',
+    'o': '#ffeecfff'
 };
 
 function render(){
