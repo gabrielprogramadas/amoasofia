@@ -2,7 +2,7 @@ const pre = document.getElementById("heart");
 
 let A = 0;
 
-const text = "julia";
+const text = "sofia";
 
 function render() {
   const width = 80;
