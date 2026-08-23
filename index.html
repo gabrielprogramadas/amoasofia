@@ -1,104 +1,13 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Coração da Sofia</title>
-
-<style>
-    * {
-        box-sizing: border-box;
-    }
-
-    body {
-        margin: 0;
-        height: 100vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background: #111;
-        overflow: hidden;
-        font-family: Arial, sans-serif;
-    }
-
-    .scene {
-        perspective: 800px;
-    }
-
-    .heart {
-        position: relative;
-        width: 180px;
-        height: 180px;
-        transform-style: preserve-3d;
-        animation: girar 4s linear infinite;
-    }
-
-    .heart-shape {
-        position: absolute;
-        width: 150px;
-        height: 150px;
-        background: #ff1744;
-        transform: rotate(-45deg);
-        left: 15px;
-        top: 15px;
-        border-radius: 15px;
-        box-shadow: 0 0 35px #ff1744;
-    }
-
-    .heart-shape::before,
-    .heart-shape::after {
-        content: "";
-        position: absolute;
-        width: 150px;
-        height: 150px;
-        background: #ff1744;
-        border-radius: 50%;
-    }
-
-    .heart-shape::before {
-        top: -75px;
-        left: 0;
-    }
-
-    .heart-shape::after {
-        left: 75px;
-        top: 0;
-    }
-
-    .nome {
-        position: absolute;
-        inset: 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        color: white;
-        font-size: 28px;
-        font-weight: bold;
-        text-shadow: 0 0 10px #fff;
-        transform: translateZ(35px);
-        z-index: 5;
-    }
-
-    @keyframes girar {
-        from {
-            transform: rotateY(0deg) rotateZ(0deg);
-        }
-
-        to {
-            transform: rotateY(360deg) rotateZ(0deg);
-        }
-    }
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3d ascii heart</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-
-<div class="scene">
-    <div class="heart">
-        <div class="heart-shape"></div>
-        <div class="nome">Sofia</div>
-    </div>
-</div>
-
+    <pre id="screen"></pre>
+    <script src="3dheart.js"></script>
 </body>
 </html>
