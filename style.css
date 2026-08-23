@@ -1,16 +1,15 @@
-body{
-    margin:0;
-    background:black;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    height:100vh;
-    overflow:hidden;
+body {
+  background: black;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
-pre{
-    font-family: monospace;
-    font-size: 10px;
-    line-height: 10px;
-    margin: 0;
+pre {
+  color: #ff69b4;
+  font-family: monospace;
+  font-size: 8px;
+  line-height: 8px;
 }
